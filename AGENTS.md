@@ -31,9 +31,11 @@ Its goal is to achieve effective agent workflows by relying more on Agents and m
 - Use `main` for releases.
 - Use `dev` for daily maintenance and development.
 - Target non-release changes at `dev` by default.
-- Never push directly to `main` or `dev`, even when GitHub allows bypassing branch protection.
-- Never use admin or bypass privileges to avoid pull request review, linear history, required conversations, or release rules.
-- Work through a short-lived branch and pull request for every change that targets `main` or `dev`.
+- Administrators may push directly to `dev` for maintainer-owned work when the change is verified and keeps history linear.
+- Non-administrator contributions must use a short-lived branch and pull request targeting `dev`.
+- Never push directly to `main`, even when GitHub allows bypassing branch protection.
+- Never use admin or bypass privileges to avoid linear history, required conversations, or release rules.
+- Work through a short-lived branch and pull request for every non-administrator change that targets `dev`, and for every change that targets `main`.
 - Keep protected branches linear. Do not merge `dev` into `main` with a merge commit.
 - Do not create a stable GitHub Release from `dev`.
 - Stable releases must be tagged from `main` after the release commit is present on `main`.
@@ -41,7 +43,7 @@ Its goal is to achieve effective agent workflows by relying more on Agents and m
 - Development builds and preview installation instructions must point to `dev`.
 - Stable installation instructions must point to `main`.
 - If a release is accidentally created from the wrong branch, do not move the published tag by default; publish a corrective patch release from `main` instead.
-- Before pushing or releasing, verify the target branch, branch protection status, intended remote refs, and whether the operation would bypass a rule. Stop if GitHub reports a bypass warning.
+- Before pushing or releasing, verify the target branch, branch protection status, intended remote refs, and whether the operation would bypass a rule. Stop if GitHub reports a bypass warning that is not an intended administrator direct push to `dev`.
 
 ## Contributions
 

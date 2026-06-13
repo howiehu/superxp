@@ -20,6 +20,7 @@ SuperXP welcomes focused contributions that are easy to review and maintain.
 - `main` is for releases.
 - `dev` is for daily maintenance and development.
 - Target regular pull requests at `dev`.
+- Project administrators may push maintainer-owned changes directly to `dev` after local verification.
 
 ## Commits
 
