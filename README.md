@@ -144,6 +144,8 @@ SuperXP does not use hooks and should not run for every conversation. Use it onl
 
 The only allowed implicit match is the explicit `xp!` start-of-message keyword handled by `using-superxp`. The internal `xp-loop` skill disables implicit invocation.
 
+After SuperXP is active, do not mix it with third-party workflow systems such as Superpowers or OpenSpec unless you explicitly cancel SuperXP first. Native or official non-workflow agent capabilities can still be used to execute SuperXP.
+
 Ordinary requests such as `fix this bug`, `use TDD`, or `make a plan` should not activate SuperXP unless you explicitly choose SuperXP.
 
 ## Status

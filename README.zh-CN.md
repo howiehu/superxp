@@ -144,6 +144,8 @@ SuperXP 不使用 hooks，也不应当在每一次对话中自动运行。只有
 
 唯一允许的隐式匹配，是由 `using-superxp` 处理的消息开头显式关键字 `xp!`。内部 `xp-loop` skill 禁用隐式调用。
 
+SuperXP 激活后，不得与 Superpowers 或 OpenSpec 等第三方工作流混用，除非你先明确取消 SuperXP。Agent 原生或官方的非工作流能力仍然可以用于执行 SuperXP。
+
 普通请求，例如 `fix this bug`、`use TDD` 或 `make a plan`，不应触发 SuperXP，除非你明确选择 SuperXP。
 
 ## 状态

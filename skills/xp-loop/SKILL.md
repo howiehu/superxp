@@ -1,6 +1,6 @@
 ---
 name: xp-loop
-description: "Internal SuperXP core workflow. Use when maintaining SuperXP itself or after using-superxp has already established an explicit SuperXP session. Do not use for ordinary feature, bugfix, refactor, TDD, plan, spec, or XP mentions without an explicit SuperXP trigger."
+description: "Internal SuperXP core workflow. Use only after using-superxp has already established an explicit SuperXP session. Do not use for ordinary feature, bugfix, refactor, TDD, plan, spec, or XP mentions without an explicit SuperXP trigger."
 ---
 
 # XP Loop
@@ -10,10 +10,13 @@ Use the smallest workflow that preserves Extreme Programming discipline.
 Activation rules:
 
 - Treat `using-superxp` as the public entrypoint. Do not present `xp-loop` as the normal user entrypoint.
-- Treat `xp!`, `XP!`, `Xp!`, and `xP!` at the start of the user message as the same explicit trigger.
+- Inherit explicit SuperXP selection only from `using-superxp`; do not independently interpret `xp!`.
 - Do not treat `xp!` in the middle of a message as a trigger.
 - Do not activate SuperXP for ordinary requests that mention feature work, bug fixes, refactoring, TDD, plans, specs, or XP unless the customer explicitly selected SuperXP.
 - If SuperXP was not explicitly triggered, use the host agent's normal workflow instead.
+- Do not mix SuperXP with third-party workflow systems. After SuperXP is explicitly selected, do not use Superpowers, OpenSpec, or any other competing third-party workflow unless the customer explicitly cancels SuperXP first.
+- This does not forbid the host agent's native or official non-workflow capabilities, such as Plan Mode, TODO/checklist tracking, built-in review tools, official verification tools, or official non-workflow skills, when they are used to execute SuperXP rather than replace it.
+- Superpowers, OpenSpec, or other third-party workflows must not replace or run alongside SuperXP, even if they are installed, bundled, curated, or presented as available capabilities.
 
 Core loop:
 
