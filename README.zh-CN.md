@@ -2,9 +2,66 @@
 
 [English](README.md)
 
+## 安装
+
+请根据需要选择对应的安装通道。
+
+### 正式版
+
+正式版从 `main` 分支发布。
+
+```bash
+codex plugin marketplace add howiehu/superxp --ref main
+```
+
+### 开发版
+
+开发版从 `dev` 分支发布。
+
+```bash
+codex plugin marketplace add howiehu/superxp --ref dev
+```
+
+如果是在已经克隆的本地仓库中进行开发，可以在仓库根目录安装 repo marketplace：
+
+```bash
+codex plugin marketplace add .
+```
+
+然后重启 Codex 或开启新的对话，打开插件目录，选择 SuperXP marketplace，并安装 `superxp`。
+
+## 简要概要
+
 SuperXP 是一个面向智能体软件开发的轻量级工作流框架，其设计基础来自极限编程和敏捷实践。
 
 它的目标是通过更多依赖 Agents 和模型自身能力，以更少的规则、更低的 prompt 开销和更快的反馈，获得有效的工作流约束。
+
+SuperXP v1 是一个最小 Codex 插件预览，核心包含两个 skills：
+
+- `using-superxp`：用于明确选择 SuperXP 的入口。
+- `xp-loop`：核心 XP 工作流。
+
+该工作流基于极限编程思想：
+
+```text
+Orient -> Clarify -> Slice -> Check -> TDD Cycle -> Verify -> Reflect
+```
+
+SuperXP 不使用 hooks，也不应当在每一次对话中自动运行。只有当你明确选择它时，才使用 SuperXP。
+
+## 使用方式
+
+使用以下任一显式触发方式：
+
+- `/using-superxp`
+- `$using-superxp`
+- 以 `xp!` 开始用户消息，大小写均可，例如 `xp! help me slice this change`。
+
+唯一允许的隐式匹配，是由 `using-superxp` 处理的消息开头显式关键字 `xp!`。内部 `xp-loop` skill 禁用隐式调用。
+
+SuperXP 激活后，不得与 Superpowers 或 OpenSpec 等第三方工作流混用，除非你先明确取消 SuperXP。Agent 原生或官方的非工作流能力仍然可以用于执行 SuperXP。
+
+普通请求，例如 `fix this bug`、`use TDD` 或 `make a plan`，不应触发 SuperXP，除非你明确选择 SuperXP。
 
 ## 背景
 
@@ -24,17 +81,6 @@ SuperXP 致敬 [Superpowers](https://github.com/obra/superpowers)。我在实际
 - 所有实践都必须面向开源协作进行设计。
 
 ## v1 插件预览
-
-SuperXP v1 是一个最小 Codex 插件预览，核心包含两个 skills：
-
-- `using-superxp`：用于明确选择 SuperXP 的入口。
-- `xp-loop`：核心 XP 工作流。
-
-该工作流基于极限编程思想：
-
-```text
-Orient -> Clarify -> Slice -> Check -> TDD Cycle -> Verify -> Reflect
-```
 
 目标不是取消纪律，而是只保留能够产生快速反馈、清晰沟通、简单设计、小步增量和可验收交接的必要纪律。
 
@@ -105,48 +151,6 @@ Worktrees 和 subagents 是一等的 agent 工程实践。
 当需要保护工作区、支持回滚、进行并行试验或保持干净提交链时，使用 worktree 隔离。
 
 当并行调查、独立审查、角色分离或上下文隔离能够降低风险或缩短反馈时间时，使用 subagents。
-
-## 安装
-
-请根据需要选择对应的安装通道。
-
-### 正式版
-
-正式版从 `main` 分支发布。
-
-```bash
-codex plugin marketplace add howiehu/superxp --ref main
-```
-
-### 开发版
-
-开发版从 `dev` 分支发布。
-
-```bash
-codex plugin marketplace add howiehu/superxp --ref dev
-```
-
-如果是在已经克隆的本地仓库中进行开发，可以在仓库根目录安装 repo marketplace：
-
-```bash
-codex plugin marketplace add .
-```
-
-然后重启 Codex 或开启新的对话，打开插件目录，选择 SuperXP marketplace，并安装 `superxp`。
-
-## 使用方式
-
-SuperXP 不使用 hooks，也不应当在每一次对话中自动运行。只有当你明确选择它时，才使用 SuperXP：
-
-- `/using-superxp`
-- `$using-superxp`
-- 以 `xp!` 开始用户消息，大小写均可，例如 `xp! help me slice this change`。
-
-唯一允许的隐式匹配，是由 `using-superxp` 处理的消息开头显式关键字 `xp!`。内部 `xp-loop` skill 禁用隐式调用。
-
-SuperXP 激活后，不得与 Superpowers 或 OpenSpec 等第三方工作流混用，除非你先明确取消 SuperXP。Agent 原生或官方的非工作流能力仍然可以用于执行 SuperXP。
-
-普通请求，例如 `fix this bug`、`use TDD` 或 `make a plan`，不应触发 SuperXP，除非你明确选择 SuperXP。
 
 ## 状态
 

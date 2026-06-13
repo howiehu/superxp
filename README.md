@@ -2,9 +2,66 @@
 
 [中文](README.zh-CN.md)
 
+## Installation
+
+Install SuperXP from the branch that matches the channel you want.
+
+### Stable
+
+Stable releases are published from the `main` branch.
+
+```bash
+codex plugin marketplace add howiehu/superxp --ref main
+```
+
+### Development
+
+Development builds are published from the `dev` branch.
+
+```bash
+codex plugin marketplace add howiehu/superxp --ref dev
+```
+
+For local development inside a cloned checkout, install the repo marketplace from the repository root:
+
+```bash
+codex plugin marketplace add .
+```
+
+Then restart Codex or start a new thread, open the plugin directory, choose the SuperXP marketplace, and install `superxp`.
+
+## Quick Overview
+
 SuperXP is a lightweight workflow framework for agentic software development, shaped by Extreme Programming and Agile practice.
 
 It aims to get useful workflow discipline with fewer rules, less prompt overhead, and faster feedback by relying more on agents and the underlying model capabilities.
+
+SuperXP v1 is a minimal Codex plugin preview centered on two skills:
+
+- `using-superxp`: explicit entrypoint for choosing SuperXP.
+- `xp-loop`: the core XP workflow.
+
+The workflow is inspired by Extreme Programming:
+
+```text
+Orient -> Clarify -> Slice -> Check -> TDD Cycle -> Verify -> Reflect
+```
+
+SuperXP does not use hooks and should not run for every conversation. Use it only when you explicitly choose it.
+
+## Usage
+
+Use one of these explicit triggers:
+
+- `/using-superxp`
+- `$using-superxp`
+- Start the user message with `xp!`, case-insensitive, for example `xp! help me slice this change`.
+
+The only allowed implicit match is the explicit `xp!` start-of-message keyword handled by `using-superxp`. The internal `xp-loop` skill disables implicit invocation.
+
+After SuperXP is active, do not mix it with third-party workflow systems such as Superpowers or OpenSpec unless you explicitly cancel SuperXP first. Native or official non-workflow agent capabilities can still be used to execute SuperXP.
+
+Ordinary requests such as `fix this bug`, `use TDD`, or `make a plan` should not activate SuperXP unless you explicitly choose SuperXP.
 
 ## Background
 
@@ -24,17 +81,6 @@ SuperXP is a rethinking of workflow from that experience.
 - Design every practice for open source collaboration.
 
 ## v1 Plugin Preview
-
-SuperXP v1 is a minimal Codex plugin preview centered on two skills:
-
-- `using-superxp`: explicit entrypoint for choosing SuperXP.
-- `xp-loop`: the core XP workflow.
-
-The workflow is inspired by Extreme Programming:
-
-```text
-Orient -> Clarify -> Slice -> Check -> TDD Cycle -> Verify -> Reflect
-```
 
 The goal is not to remove discipline. The goal is to keep only the discipline that creates fast feedback, clear communication, simple design, small increments, and verifiable handoff.
 
@@ -105,48 +151,6 @@ Worktrees and subagents are first-class agent engineering practices.
 Use worktree isolation when it protects the workspace, enables rollback, supports parallel experiments, or keeps the commit chain clean.
 
 Use subagents when parallel investigation, independent review, role separation, or context isolation reduces risk or shortens feedback time.
-
-## Installation
-
-Install SuperXP from the branch that matches the channel you want.
-
-### Stable
-
-Stable releases are published from the `main` branch.
-
-```bash
-codex plugin marketplace add howiehu/superxp --ref main
-```
-
-### Development
-
-Development builds are published from the `dev` branch.
-
-```bash
-codex plugin marketplace add howiehu/superxp --ref dev
-```
-
-For local development inside a cloned checkout, install the repo marketplace from the repository root:
-
-```bash
-codex plugin marketplace add .
-```
-
-Then restart Codex or start a new thread, open the plugin directory, choose the SuperXP marketplace, and install `superxp`.
-
-## Usage
-
-SuperXP does not use hooks and should not run for every conversation. Use it only when you explicitly choose it:
-
-- `/using-superxp`
-- `$using-superxp`
-- Start the user message with `xp!`, case-insensitive, for example `xp! help me slice this change`.
-
-The only allowed implicit match is the explicit `xp!` start-of-message keyword handled by `using-superxp`. The internal `xp-loop` skill disables implicit invocation.
-
-After SuperXP is active, do not mix it with third-party workflow systems such as Superpowers or OpenSpec unless you explicitly cancel SuperXP first. Native or official non-workflow agent capabilities can still be used to execute SuperXP.
-
-Ordinary requests such as `fix this bug`, `use TDD`, or `make a plan` should not activate SuperXP unless you explicitly choose SuperXP.
 
 ## Status
 
