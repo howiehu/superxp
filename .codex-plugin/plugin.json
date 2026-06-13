@@ -1,0 +1,47 @@
+{
+  "name": "superxp",
+  "version": "0.0.1",
+  "description": "A lightweight workflow framework for agentic software development, shaped by Extreme Programming and Agile practice.",
+  "author": {
+    "name": "Hao Hu",
+    "email": "huhao@outlook.com",
+    "url": "https://github.com/howiehu"
+  },
+  "homepage": "https://github.com/howiehu/superxp",
+  "repository": "https://github.com/howiehu/superxp",
+  "license": "MIT",
+  "keywords": [
+    "extreme-programming",
+    "xp",
+    "tdd",
+    "test-first",
+    "agentic-workflow",
+    "skills",
+    "feedback"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SuperXP",
+    "shortDescription": "Lightweight workflow framework for coding agents",
+    "longDescription": "SuperXP is a lightweight workflow framework for agentic software development. It keeps useful workflow discipline with fewer rules, less prompt overhead, and faster feedback by relying more on agents and model capabilities.",
+    "developerName": "Hao Hu",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "/using-superxp help me slice this change.",
+      "xp! help me clarify and verify this task.",
+      "$xp-loop review this work."
+    ],
+    "websiteURL": "https://github.com/howiehu/superxp",
+    "privacyPolicyURL": "https://github.com/howiehu/superxp",
+    "termsOfServiceURL": "https://github.com/howiehu/superxp",
+    "brandColor": "#2563EB",
+    "composerIcon": "./assets/superxp-composer-icon.png",
+    "logo": "./assets/superxp-logo.png",
+    "screenshots": []
+  }
+}
