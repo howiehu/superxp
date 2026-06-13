@@ -17,6 +17,7 @@ Valid triggers:
 
 Rules:
 
+- Allow implicit invocation only to recognize the explicit `xp!` start-of-message keyword and direct SuperXP selection phrases.
 - Treat `xp!`, `XP!`, `Xp!`, and `xP!` at the start of the user message as the same trigger.
 - Do not treat `xp!` in the middle of a message as a trigger.
 - Do not activate SuperXP for ordinary requests that mention feature work, bug fixes, refactoring, TDD, plans, specs, or XP unless the customer explicitly selected SuperXP.

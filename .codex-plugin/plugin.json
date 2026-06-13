@@ -1,6 +1,6 @@
 {
   "name": "superxp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A lightweight workflow framework for agentic software development, shaped by Extreme Programming and Agile practice.",
   "author": {
     "name": "Hao Hu",
@@ -34,7 +34,7 @@
     "defaultPrompt": [
       "/using-superxp help me slice this change.",
       "xp! help me clarify and verify this task.",
-      "$xp-loop review this work."
+      "/using-superxp review this work."
     ],
     "websiteURL": "https://github.com/howiehu/superxp",
     "privacyPolicyURL": "https://github.com/howiehu/superxp",

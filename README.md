@@ -140,8 +140,9 @@ SuperXP does not use hooks and should not run for every conversation. Use it onl
 
 - `/using-superxp`
 - `$using-superxp`
-- `$xp-loop`
 - Start the user message with `xp!`, case-insensitive, for example `xp! help me slice this change`.
+
+The only allowed implicit match is the explicit `xp!` start-of-message keyword handled by `using-superxp`. The internal `xp-loop` skill disables implicit invocation.
 
 Ordinary requests such as `fix this bug`, `use TDD`, or `make a plan` should not activate SuperXP unless you explicitly choose SuperXP.
 
