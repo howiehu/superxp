@@ -1,6 +1,6 @@
 ---
 name: xp-loop
-description: "Core SuperXP workflow. Use only after the user explicitly invokes $xp-loop, selects using-superxp, explicitly asks to use SuperXP, or starts the user message with xp! in any letter case. Do not use for ordinary feature, bugfix, refactor, TDD, plan, spec, or XP mentions without an explicit SuperXP trigger."
+description: "Internal SuperXP core workflow. Use when maintaining SuperXP itself or after using-superxp has already established an explicit SuperXP session. Do not use for ordinary feature, bugfix, refactor, TDD, plan, spec, or XP mentions without an explicit SuperXP trigger."
 ---
 
 # XP Loop
@@ -9,6 +9,7 @@ Use the smallest workflow that preserves Extreme Programming discipline.
 
 Activation rules:
 
+- Treat `using-superxp` as the public entrypoint. Do not present `xp-loop` as the normal user entrypoint.
 - Treat `xp!`, `XP!`, `Xp!`, and `xP!` at the start of the user message as the same explicit trigger.
 - Do not treat `xp!` in the middle of a message as a trigger.
 - Do not activate SuperXP for ordinary requests that mention feature work, bug fixes, refactoring, TDD, plans, specs, or XP unless the customer explicitly selected SuperXP.
