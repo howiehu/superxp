@@ -1,6 +1,6 @@
 ---
 name: using-superxp
-description: "Explicit SuperXP entrypoint. Use only when the user invokes /using-superxp, $using-superxp, @superxp, explicitly asks to use SuperXP, or starts the user message with xp! in any letter case. Do not use for ordinary feature, bugfix, refactor, TDD, plan, spec, or XP mentions without an explicit SuperXP trigger."
+description: "Explicit SuperXP entrypoint. Use only when the user invokes /using-superxp, /skill:using-superxp, $using-superxp, @superxp, explicitly asks to use SuperXP, or starts the user message with xp! in any letter case. Do not use for ordinary feature, bugfix, refactor, TDD, plan, spec, or XP mentions without an explicit SuperXP trigger."
 ---
 
 # Using SuperXP
@@ -10,6 +10,7 @@ Use SuperXP only because the customer explicitly selected it.
 Valid triggers:
 
 - `/using-superxp`
+- `/skill:using-superxp`
 - `$using-superxp`
 - `@superxp`
 - A direct request to use SuperXP.

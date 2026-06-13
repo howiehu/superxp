@@ -1,0 +1,35 @@
+{
+  "name": "superxp",
+  "version": "0.0.3",
+  "description": "A lightweight workflow framework for agentic software development, shaped by Extreme Programming and Agile practice.",
+  "author": {
+    "name": "Hao Hu",
+    "email": "huhao@outlook.com",
+    "url": "https://github.com/howiehu"
+  },
+  "homepage": "https://github.com/howiehu/superxp",
+  "license": "MIT",
+  "keywords": [
+    "extreme-programming",
+    "xp",
+    "tdd",
+    "test-first",
+    "agentic-workflow",
+    "skills",
+    "feedback"
+  ],
+  "skills": "./skills/",
+  "skillInstructions": "Kimi Code tool mapping for SuperXP skills:\n\n- SuperXP must be activated only by explicit customer choice, such as `/skill:using-superxp`, a direct request to use SuperXP, or a user message that starts with `xp!` in any letter case.\n- Do not use `sessionStart` behavior, hooks, or always-on prompt injection to activate SuperXP.\n- When SuperXP says to use the host agent's native question mechanism, use Kimi Code's `AskUserQuestion` tool when it is available. If presenting options, put the strongest recommendation first and suffix its label with `(Recommended)`.\n- When SuperXP says to create a TODO or checklist, use Kimi Code's native TODO/checklist tool when it is available.\n- When SuperXP says to use subagents, use Kimi Code's `Agent` tool only when it reduces risk or feedback time.\n- When SuperXP says to use the bundled `xp-loop` skill, use Kimi Code's native `Skill` tool to load `xp-loop`.\n- Do not mix SuperXP with Superpowers, OpenSpec, or any other third-party workflow system unless the customer explicitly cancels SuperXP first.\n- Kimi Code native or official non-workflow capabilities may be used to execute SuperXP, but must not replace it.",
+  "interface": {
+    "displayName": "SuperXP",
+    "shortDescription": "Lightweight workflow framework for coding agents",
+    "longDescription": "SuperXP is a lightweight workflow framework for agentic software development. It keeps useful workflow discipline with fewer rules, less prompt overhead, and faster feedback by relying more on agents and model capabilities.",
+    "developerName": "Hao Hu",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/howiehu/superxp"
+  }
+}

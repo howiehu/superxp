@@ -8,7 +8,7 @@ SuperXP is a lightweight workflow framework for agentic software development, sh
 
 It aims to get useful workflow discipline with fewer rules, less prompt overhead, and faster feedback by relying more on agents and the underlying model capabilities.
 
-SuperXP v1 is a minimal Codex plugin preview centered on two skills:
+SuperXP v1 is a minimal Codex and Kimi Code plugin preview centered on two skills:
 
 - `using-superxp`: explicit entrypoint for choosing SuperXP.
 - `xp-loop`: the core XP workflow.
@@ -29,9 +29,11 @@ I oppose racism, closed and self-protective gatekeeping, hegemonic platform beha
 
 ## Installation
 
-Install SuperXP from the branch that matches the channel you want.
+Install SuperXP for the agent and channel you want.
 
-### Stable
+### Codex
+
+#### Stable
 
 Stable releases are published from the `main` branch.
 
@@ -39,7 +41,7 @@ Stable releases are published from the `main` branch.
 codex plugin marketplace add howiehu/superxp --ref main
 ```
 
-### Development
+#### Development
 
 Development builds are published from the `dev` branch.
 
@@ -55,15 +57,40 @@ codex plugin marketplace add .
 
 Then restart Codex or start a new thread, open the plugin directory, choose the SuperXP marketplace, and install `superxp`.
 
+### Kimi Code
+
+Stable installs use the GitHub repository default branch, which is `main`:
+
+```text
+/plugins install https://github.com/howiehu/superxp
+```
+
+For development, install a local checkout of the `dev` branch:
+
+```bash
+git clone https://github.com/howiehu/superxp
+cd superxp
+git checkout dev
+```
+
+Then install the local plugin path in Kimi Code:
+
+```text
+/plugins install /path/to/superxp
+```
+
+Then restart Kimi Code or start a new session.
+
 ## Usage
 
 Use one of these explicit triggers:
 
 - `/using-superxp`
+- `/skill:using-superxp` in Kimi Code
 - `$using-superxp`
 - Start the user message with `xp!`, case-insensitive, for example `xp! help me slice this change`.
 
-The only allowed implicit match is the explicit `xp!` start-of-message keyword handled by `using-superxp`. The internal `xp-loop` skill disables implicit invocation.
+The only allowed implicit match is the explicit `xp!` start-of-message keyword handled by `using-superxp`. The internal `xp-loop` skill disables implicit invocation. In Kimi Code, `/skill:using-superxp` is the reliable explicit entrypoint; `xp!` depends on Kimi Code's native skill selection.
 
 After SuperXP is active, do not mix it with third-party workflow systems such as Superpowers or OpenSpec unless you explicitly cancel SuperXP first. Native or official non-workflow agent capabilities can still be used to execute SuperXP.
 
