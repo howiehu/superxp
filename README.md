@@ -2,6 +2,25 @@
 
 [中文](README.zh-CN.md)
 
+## Quick Overview
+
+SuperXP is a lightweight workflow framework for agentic software development, shaped by Extreme Programming and Agile practice.
+
+It aims to get useful workflow discipline with fewer rules, less prompt overhead, and faster feedback by relying more on agents and the underlying model capabilities.
+
+SuperXP v1 is a minimal Codex plugin preview centered on two skills:
+
+- `using-superxp`: explicit entrypoint for choosing SuperXP.
+- `xp-loop`: the core XP workflow.
+
+The workflow is inspired by Extreme Programming:
+
+```text
+Orient -> Clarify -> Slice -> Check -> TDD Cycle -> Verify -> Reflect
+```
+
+SuperXP does not use hooks and should not run for every conversation. Use it only when you explicitly choose it.
+
 ## Installation
 
 Install SuperXP from the branch that matches the channel you want.
@@ -29,25 +48,6 @@ codex plugin marketplace add .
 ```
 
 Then restart Codex or start a new thread, open the plugin directory, choose the SuperXP marketplace, and install `superxp`.
-
-## Quick Overview
-
-SuperXP is a lightweight workflow framework for agentic software development, shaped by Extreme Programming and Agile practice.
-
-It aims to get useful workflow discipline with fewer rules, less prompt overhead, and faster feedback by relying more on agents and the underlying model capabilities.
-
-SuperXP v1 is a minimal Codex plugin preview centered on two skills:
-
-- `using-superxp`: explicit entrypoint for choosing SuperXP.
-- `xp-loop`: the core XP workflow.
-
-The workflow is inspired by Extreme Programming:
-
-```text
-Orient -> Clarify -> Slice -> Check -> TDD Cycle -> Verify -> Reflect
-```
-
-SuperXP does not use hooks and should not run for every conversation. Use it only when you explicitly choose it.
 
 ## Usage
 

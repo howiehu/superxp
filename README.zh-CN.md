@@ -2,6 +2,25 @@
 
 [English](README.md)
 
+## 简要概要
+
+SuperXP 是一个面向智能体软件开发的轻量级工作流框架，其设计基础来自极限编程和敏捷实践。
+
+它的目标是通过更多依赖 Agents 和模型自身能力，以更少的规则、更低的 prompt 开销和更快的反馈，获得有效的工作流约束。
+
+SuperXP v1 是一个最小 Codex 插件预览，核心包含两个 skills：
+
+- `using-superxp`：用于明确选择 SuperXP 的入口。
+- `xp-loop`：核心 XP 工作流。
+
+该工作流基于极限编程思想：
+
+```text
+Orient -> Clarify -> Slice -> Check -> TDD Cycle -> Verify -> Reflect
+```
+
+SuperXP 不使用 hooks，也不应当在每一次对话中自动运行。只有当你明确选择它时，才使用 SuperXP。
+
 ## 安装
 
 请根据需要选择对应的安装通道。
@@ -29,25 +48,6 @@ codex plugin marketplace add .
 ```
 
 然后重启 Codex 或开启新的对话，打开插件目录，选择 SuperXP marketplace，并安装 `superxp`。
-
-## 简要概要
-
-SuperXP 是一个面向智能体软件开发的轻量级工作流框架，其设计基础来自极限编程和敏捷实践。
-
-它的目标是通过更多依赖 Agents 和模型自身能力，以更少的规则、更低的 prompt 开销和更快的反馈，获得有效的工作流约束。
-
-SuperXP v1 是一个最小 Codex 插件预览，核心包含两个 skills：
-
-- `using-superxp`：用于明确选择 SuperXP 的入口。
-- `xp-loop`：核心 XP 工作流。
-
-该工作流基于极限编程思想：
-
-```text
-Orient -> Clarify -> Slice -> Check -> TDD Cycle -> Verify -> Reflect
-```
-
-SuperXP 不使用 hooks，也不应当在每一次对话中自动运行。只有当你明确选择它时，才使用 SuperXP。
 
 ## 使用方式
 
