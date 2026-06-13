@@ -8,9 +8,11 @@ It aims to get useful workflow discipline with fewer rules, less prompt overhead
 
 ## Background
 
-SuperXP is inspired by the value of structured agent workflows, including ideas worth studying from [Superpowers](https://github.com/obra/superpowers).
+SuperXP pays respect to [Superpowers](https://github.com/obra/superpowers). I have used Superpowers deeply in real work and created a lot of value with it.
 
-The project exists because those ideas should also have a smaller, more open, and more adaptable expression. SuperXP studies strong workflow systems as references, but it is not a Superpowers distribution, preset, or dependency.
+At the same time, I realized that Superpowers is a key reason my work takes longer and consumes more tokens.
+
+SuperXP is a rethinking of workflow from that experience.
 
 ## Principles
 

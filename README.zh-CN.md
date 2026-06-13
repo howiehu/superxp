@@ -8,9 +8,11 @@ SuperXP 是一个面向智能体软件开发的轻量级工作流框架，其设
 
 ## 背景
 
-SuperXP 受到结构化智能体工作流价值的启发，也会研究 [Superpowers](https://github.com/obra/superpowers) 中值得借鉴的思想。
+SuperXP 致敬 [Superpowers](https://github.com/obra/superpowers)。我在实际工作中深度应用 Superpowers，并借此创造了很多价值。
 
-这个项目存在的原因是：这些思想也应当有一种更小、更开放、更容易调整的表达方式。SuperXP 会把成熟的工作流系统作为参考，但它不是 Superpowers 的发行版、预设或依赖。
+同时，我也意识到，Superpowers 是导致我的工作时间变长、消耗更多 tokens 的关键原因。
+
+所以，SuperXP 是一次对于工作流的重新思考。
 
 ## 原则
 
