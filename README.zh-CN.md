@@ -140,8 +140,9 @@ SuperXP 不使用 hooks，也不应当在每一次对话中自动运行。只有
 
 - `/using-superxp`
 - `$using-superxp`
-- `$xp-loop`
 - 以 `xp!` 开始用户消息，大小写均可，例如 `xp! help me slice this change`。
+
+唯一允许的隐式匹配，是由 `using-superxp` 处理的消息开头显式关键字 `xp!`。内部 `xp-loop` skill 禁用隐式调用。
 
 普通请求，例如 `fix this bug`、`use TDD` 或 `make a plan`，不应触发 SuperXP，除非你明确选择 SuperXP。
 

@@ -1,8 +1,8 @@
 interface:
   display_name: "SuperXP XP Loop"
-  short_description: "Minimal XP loop with Test First"
+  short_description: "Internal SuperXP core workflow"
   brand_color: "#2563EB"
-  default_prompt: "Use $xp-loop to clarify, slice, verify, and apply Test First."
+  default_prompt: "Use $xp-loop only after SuperXP has been explicitly selected."
 
 policy:
-  allow_implicit_invocation: true
+  allow_implicit_invocation: false
