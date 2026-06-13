@@ -1,14 +1,14 @@
 {
-  "name": "superxp-local",
+  "name": "superxp-marketplace",
   "interface": {
-    "displayName": "SuperXP Local"
+    "displayName": "SuperXP"
   },
   "plugins": [
     {
       "name": "superxp",
       "source": {
         "source": "local",
-        "path": "./"
+        "path": "./plugins/superxp"
       },
       "policy": {
         "installation": "AVAILABLE",

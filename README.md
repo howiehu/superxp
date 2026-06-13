@@ -39,6 +39,7 @@ Stable releases are published from the `main` branch.
 
 ```bash
 codex plugin marketplace add howiehu/superxp --ref main
+codex plugin add superxp@superxp-marketplace
 ```
 
 #### Development
@@ -47,15 +48,17 @@ Development builds are published from the `dev` branch.
 
 ```bash
 codex plugin marketplace add howiehu/superxp --ref dev
+codex plugin add superxp@superxp-marketplace
 ```
 
 For local development inside a cloned checkout, install the repo marketplace from the repository root:
 
 ```bash
 codex plugin marketplace add .
+codex plugin add superxp@superxp-marketplace
 ```
 
-Then restart Codex or start a new thread, open the plugin directory, choose the SuperXP marketplace, and install `superxp`.
+Then restart Codex or start a new thread so the installed skills are loaded.
 
 ### Kimi Code
 
