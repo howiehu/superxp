@@ -31,6 +31,11 @@ Its goal is to achieve effective agent workflows by relying more on Agents and m
 - Use `main` for releases.
 - Use `dev` for daily maintenance and development.
 - Target non-release changes at `dev` by default.
+- Do not create a stable GitHub Release from `dev`.
+- Stable releases must be tagged from `main` after the release commit is present on `main`.
+- Development builds and preview installation instructions must point to `dev`.
+- Stable installation instructions must point to `main`.
+- If a release is accidentally created from the wrong branch, do not move the published tag by default; publish a corrective patch release from `main` instead.
 
 ## Contributions
 

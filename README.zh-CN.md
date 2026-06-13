@@ -106,15 +106,33 @@ Worktrees 和 subagents 是一等的 agent 工程实践。
 
 当并行调查、独立审查、角色分离或上下文隔离能够降低风险或缩短反馈时间时，使用 subagents。
 
-## 本地安装
+## 安装
 
-在仓库根目录安装 repo marketplace：
+请根据需要选择对应的安装通道。
+
+### 正式版
+
+正式版从 `main` 分支发布。
+
+```bash
+codex plugin marketplace add howiehu/superxp --ref main
+```
+
+### 开发版
+
+开发版从 `dev` 分支发布。
+
+```bash
+codex plugin marketplace add howiehu/superxp --ref dev
+```
+
+如果是在已经克隆的本地仓库中进行开发，可以在仓库根目录安装 repo marketplace：
 
 ```bash
 codex plugin marketplace add .
 ```
 
-然后重启 Codex 或开启新的对话，打开插件目录，选择 `SuperXP Local`，并安装 `superxp`。
+然后重启 Codex 或开启新的对话，打开插件目录，选择 SuperXP marketplace，并安装 `superxp`。
 
 ## 使用方式
 

@@ -106,15 +106,33 @@ Use worktree isolation when it protects the workspace, enables rollback, support
 
 Use subagents when parallel investigation, independent review, role separation, or context isolation reduces risk or shortens feedback time.
 
-## Local Installation
+## Installation
 
-Install the repo marketplace from the repository root:
+Install SuperXP from the branch that matches the channel you want.
+
+### Stable
+
+Stable releases are published from the `main` branch.
+
+```bash
+codex plugin marketplace add howiehu/superxp --ref main
+```
+
+### Development
+
+Development builds are published from the `dev` branch.
+
+```bash
+codex plugin marketplace add howiehu/superxp --ref dev
+```
+
+For local development inside a cloned checkout, install the repo marketplace from the repository root:
 
 ```bash
 codex plugin marketplace add .
 ```
 
-Then restart Codex or start a new thread, open the plugin directory, choose `SuperXP Local`, and install `superxp`.
+Then restart Codex or start a new thread, open the plugin directory, choose the SuperXP marketplace, and install `superxp`.
 
 ## Usage
 
