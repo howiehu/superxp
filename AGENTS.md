@@ -2,6 +2,7 @@
 
 ## Core Constraint
 
+- YAGNI is a core principle: keep every future change to the smallest necessary increment.
 - Do not use Superpowers in this project.
 
 ## Project
