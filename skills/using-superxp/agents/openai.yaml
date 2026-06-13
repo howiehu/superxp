@@ -1,0 +1,8 @@
+interface:
+  display_name: "Using SuperXP"
+  short_description: "Explicit entrypoint for SuperXP"
+  brand_color: "#2563EB"
+  default_prompt: "Use $using-superxp to guide this task with SuperXP."
+
+policy:
+  allow_implicit_invocation: true
