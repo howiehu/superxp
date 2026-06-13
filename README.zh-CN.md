@@ -21,6 +21,12 @@ Orient -> Clarify -> Slice -> Check -> TDD Cycle -> Verify -> Reflect
 
 SuperXP 不使用 hooks，也不应当在每一次对话中自动运行。只有当你明确选择它时，才使用 SuperXP。
 
+## 平台范围和立场
+
+SuperXP 刻意选择不支持 Claude Code，并且不会为 Claude Code 做任何优化。
+
+我反对 AI 领域中的种族主义、封闭保守的准入限制、霸权主义的平台行为，以及威胁式营销手段。SuperXP 同时拒绝围绕 Anthropic 生态进行优化，直到 Anthropic 回心转意，回到技术开放的路线中来，并且放弃一切种族主义和歧视性政策。作为共产主义者，我相信 AI 的未来在于开源，AI 属于劳动人民。
+
 ## 安装
 
 请根据需要选择对应的安装通道。

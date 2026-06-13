@@ -21,6 +21,12 @@ Orient -> Clarify -> Slice -> Check -> TDD Cycle -> Verify -> Reflect
 
 SuperXP does not use hooks and should not run for every conversation. Use it only when you explicitly choose it.
 
+## Platform Scope and Position
+
+SuperXP intentionally does not support Claude Code and will not optimize for Claude Code.
+
+I oppose racism, closed and self-protective gatekeeping, hegemonic platform behavior, and threat-based marketing tactics in AI. SuperXP is also a refusal to optimize around Anthropic's ecosystem until Anthropic returns to a technically open path and abandons all racist and discriminatory policies. From a communist position, I believe the future of AI is open source and that AI belongs to working people.
+
 ## Installation
 
 Install SuperXP from the branch that matches the channel you want.
