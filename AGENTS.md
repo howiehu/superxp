@@ -24,3 +24,21 @@ Its goal is to achieve effective agent workflows by relying more on Agents and m
 - Keep contribution paths small and trade-offs visible.
 - Keep `README.md` and `README.zh-CN.md` structurally and semantically aligned.
 - Update both README files in the same change whenever either one changes.
+
+## Branches
+
+- Use `main` for releases.
+- Use `dev` for daily maintenance and development.
+- Target non-release changes at `dev` by default.
+
+## Contributions
+
+- Keep issue and pull request entry points structured.
+- Require clear problem statements, scope, and verification evidence before deep review.
+- Treat low-signal or unverifiable submissions as triage work, not implementation work.
+
+## Commits
+
+- Use Commitizen-style Conventional Commits: `<type>(<scope>): <subject>`.
+- Prefer these types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `ci`.
+- Keep subjects imperative, concise, and useful for release notes.

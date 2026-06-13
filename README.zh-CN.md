@@ -27,6 +27,10 @@ SuperXP 致敬 [Superpowers](https://github.com/obra/superpowers)。我在实际
 
 SuperXP 当前处于初始化阶段。现阶段重点是在加入实现细节之前，定义最小可用的项目形态。
 
+## 贡献
+
+提交 issue 或 pull request 之前，请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
 ## 许可证
 
 本项目使用 [LICENSE](LICENSE) 中列出的许可条款。

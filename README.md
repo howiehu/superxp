@@ -27,6 +27,10 @@ SuperXP is a rethinking of workflow from that experience.
 
 SuperXP is in its initialization stage. The current focus is defining the smallest useful project shape before adding implementation details.
 
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening issues or pull requests.
+
 ## License
 
 This project is licensed under the terms in [LICENSE](LICENSE).
